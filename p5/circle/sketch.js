@@ -7,5 +7,5 @@ function draw() {
   // put drawing code here
 rect(150,100,200,300)
 
-  ellipse(mouseX, mouseY, 10, 10) ;
+  rect(mouseX, mouseY, 10, 10) ;
 }
