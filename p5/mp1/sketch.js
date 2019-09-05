@@ -13,6 +13,7 @@ function draw() {
   if (mouseIsPressed) {
     //pressed state
     //cape
+    rotate(120)
     fill(255,0,0)
     triangle(100, 400, 565, 400, 338, 160);
     fill(0,0,255)
@@ -50,6 +51,15 @@ function draw() {
  ellipse(320,110,15,15);
  //mouth
 rect(310,140,50,5);
+//left eye laser
+rotate(120)
+fill(255,0,0)
+rect(320,-190,10,100);
+//right eye laser
+rotate(0)
+fill(255,0,0)
+rect(345,-208,10,100);
+
 
 
 
@@ -77,6 +87,7 @@ rect(310,140,50,5);
  rect(370,152,40,98);
  //body
   rect(300,158,70,92);
+
 //head
  rect(300,88,70,70);
  //right leg stripe
@@ -99,7 +110,7 @@ rect(310,140,50,5);
  ellipse(320,110,15,15);
  //mouth
  fill(0)
- rect(310,14,50,5);
+ rect(310,140,50,5);
 
 
 
