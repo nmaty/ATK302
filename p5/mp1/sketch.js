@@ -13,6 +13,7 @@ function draw() {
   if (mouseIsPressed) {
     //pressed state
     //cape
+    translate (800,0)
     rotate(120)
     fill(255,0,0)
     triangle(100, 400, 565, 400, 338, 160);
