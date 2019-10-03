@@ -7,7 +7,6 @@ let slide2;
 let slide3;
 let slide4;
 let slide5;
-let target;
 
 function setup() {
   // put setup code
@@ -18,7 +17,6 @@ function setup() {
   slide3 = loadImage('assets/slide3.jpg');
   slide4 = loadImage('assets/slide4.jpg');
   slide5 = loadImage('assets/slide5.jpg');
-  target = loadImage('target');
   createCanvas(1500,700);
 }
 
