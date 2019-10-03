@@ -1,26 +1,36 @@
 var myState = 0;
 var timer = 0;
+let x,y;
 
 let slide1;
 let slide2;
 let slide3;
 let slide4;
 let slide5;
+let target;
 
 function setup() {
   // put setup code
-
+  x = width / 2;
+  y = height;
   slide1 = loadImage('assets/slide1.jpg');
   slide2 = loadImage('assets/slide2.jpg');
   slide3 = loadImage('assets/slide3.jpg');
   slide4 = loadImage('assets/slide4.jpg');
   slide5 = loadImage('assets/slide5.jpg');
+  target = loadImage('target');
   createCanvas(1500,700);
 }
 
 function draw() {
   // put drawing code here
   timer = timer + 1;
+  y = y - 1;
+
+  // Reset to the bottom
+  if (y < 0) {
+    y = height;
+  }
   switch(myState) {
 
     case 0:
@@ -40,7 +50,7 @@ function draw() {
     textSize(80)
     textFont('Boulder')
     fill('black')
-    text ("Safari Map", 450,150);
+    text ("Safari Map", width/2,y);
     break ;
 
     case 2:
@@ -48,7 +58,7 @@ function draw() {
     textSize(80)
     textFont('Boulder')
     fill('white')
-    text ("Rainforest Map", 350,500);
+    text ("Rainforest Map", width/2,y);
     break ;
 
     case 3:
@@ -56,7 +66,7 @@ function draw() {
     textSize(80)
     textFont('Boulder')
     fill('black')
-    text ("Arctic Map", 450,150);
+    text ("Arctic Map", width/2,y);
     break ;
 
     case 4:
@@ -64,7 +74,7 @@ function draw() {
     textSize(80)
     textFont('Boulder')
     fill('black')
-    text ("Desert Map", 450,150);
+    text ("Desert Map", width/2,y);
     break ;
 
   }
