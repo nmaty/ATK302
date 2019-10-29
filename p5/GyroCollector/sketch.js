@@ -76,6 +76,8 @@ function draw() {
   textSize(300);
   textAlign(CENTER);
   text("atk", width / 2, height / 2);
+  frogPos.x = xPosition;
+  frogPos.y = yPosition;
 
 
 // iterate through cars array
