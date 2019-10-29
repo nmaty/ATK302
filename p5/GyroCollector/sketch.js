@@ -19,7 +19,7 @@ function setup() {
   beta = 0;
   gamma = 0;
 
-  bunnyImage = loadImage("assets/bunny.jpg");
+  bunnyImage = loadImage("assets/darth.png");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -48,7 +48,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-  image(bunnyImage, 0, 0, 500, 500);
+  image(bunnyImage, 0, 0, 200, 200);
   //  	rect(0, 0, 100, 100) ;
   pop();
 
@@ -89,9 +89,8 @@ for (var i = 0; i < cars.length; i++) {
   }
 }
 //frog
-fill('yellow');
-ellipse(frogPos.x, frogPos.y, 75, 75);
-checkForKeys();
+//image(bunnyImage, frogPos.x, frogPos.y, 100, 100);
+//checkForKeys();
 }
 
 //our car class
@@ -103,6 +102,8 @@ function Car() {
   this.r = random(255);
   this.g = random(255);
   this.b = random(255);
+
+
 
   //methods
   this.display = function() {
@@ -129,5 +130,6 @@ function checkForKeys() {
   if (keyIsDown(RIGHT_ARROW)) frogPos.x = frogPos.x + 10;
   if (keyIsDown(UP_ARROW)) frogPos.y = frogPos.y - 10;
   if (keyIsDown(DOWN_ARROW)) frogPos.y = frogPos.y + 10;
+
 
 }
