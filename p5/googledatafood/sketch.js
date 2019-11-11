@@ -131,4 +131,5 @@ function Circle(myName, myShape) {
    //fill('white');
     //text(this.name,this.pos.x, this.pos.y);
   }
+  
 }
