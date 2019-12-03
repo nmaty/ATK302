@@ -125,12 +125,12 @@ function mouseReleased() {
     myState = 1;
     break ;
 
-    case 2:
+    case 3:
     resetTheGame();
     myState = 0;
     break ;
 
-    case 3:
+    case 4:
     resetTheGame();
     myState = 0;
     break ;

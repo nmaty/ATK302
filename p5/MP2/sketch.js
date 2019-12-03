@@ -2,6 +2,7 @@ var myState = 0;
 var timer = 0;
 let x,y;
 
+
 let slide1;
 let slide2;
 let slide3;
@@ -41,6 +42,12 @@ function draw() {
     textFont('Boulder')
     fill('orange')
     text ("2K 19 The Hunt", 450,550);
+    fill('red')
+    ellipse (1300,400,150,150);
+    fill('white')
+    ellipse (1300,400,100,100);
+    fill('red')
+    ellipse (1300,400,50,50);
     break ;
 
     case 1:

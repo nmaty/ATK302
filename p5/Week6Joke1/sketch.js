@@ -1,8 +1,8 @@
-var myState = 0;
+var myState = 0
 
 function setup() {
   // put setup code here
-  createCanvas(800,800);
+  createCanvas(1500,700);
 }
 
 function draw() {
@@ -12,13 +12,31 @@ function draw() {
     case 0:
     background(255,0,0);
     textSize(24)
-    text ("whats the best thing about switzerland?", 100,100);
+    text ("1", 100,100);
     break ;
 
     case 1:
     background(0,255,0);
     textSize(24)
-    text("I don't know, but the flag is a big plus", 200,200);
+    text("2", 200,200);
+    break ;
+
+    case 2:
+    background(0,0,255);
+    textSize(24)
+    text("3", 200,200);
+    break ;
+
+    case 3:
+    background(0);
+    textSize(24)
+    text("4", 200,200);
+    break ;
+
+    case 4:
+    background(255);
+    textSize(24)
+    text("5", 200,200);
     break ;
 
   }
@@ -26,7 +44,7 @@ function draw() {
 
 function mouseReleased() {
 myState++ ;
-if (myState > 2) {
+if (myState > 4) {
   myState = 0 ;
   }
 }

@@ -135,6 +135,7 @@ function checkForKeys() {
 
 
 }
+
 window.addEventListener('deviceorientation', function(e) {
   alpha = e.alpha;
   beta = e.beta;
