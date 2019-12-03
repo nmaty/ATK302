@@ -10,10 +10,10 @@ var chicken;
 var tacos;
 var spaghetti;
 var hamburger;
-var dog
+var dog;
 
 
-var img;
+
 
 
 
@@ -131,5 +131,5 @@ function Circle(myName, myShape) {
    //fill('white');
     //text(this.name,this.pos.x, this.pos.y);
   }
-  
+
 }
